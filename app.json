@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/log/log",
+    "pages/map/map"
+  ],
+  "window": {
+		"enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#33accc",
+    "navigationBarTitleText": "IIIROAD",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#2e5e86",
+    "list": [
+      {
+        "pagePath": "pages/map/map",
+        "text": "首页",
+        "iconPath": "/images/ic_home_normal.png",
+        "selectedIconPath": "/images/ic_home_pressed.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "传送门",
+        "iconPath": "/images/ic_rocket_normal.png",
+        "selectedIconPath": "/images/ic_rocket_pressed.png"
+      }
+    ]
+  }
+}

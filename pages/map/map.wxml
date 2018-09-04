@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="top" style="width: 100%; height: 100%"> 
+    <image class="top-bg {{top_bg}}" src="/images/12.jpg"></image>
+    <view class="top-one {{top_one}}">世界聚焦于你</view>
+  	<view class="top-two {{top_two}}">THE III ROAD</view>
+    <view class="top-three {{top_three}}">TIME:{{time}}</view>
+		<view class="music-word {{music_word}}">{{lrc_word}}</view>
+  </view>
+	<view class="bottom" style="width: 100%; height: 100%">
+		<image class="bottom-one {{ bottom_one }}" src="/images/1.png"></image>
+		<image class="bottom-one2 {{ bottom_one }}" src="/images/1.png"></image>
+		<image class="bottom-two {{ bottom_two }}" src="/images/11.png"></image>
+		<image class="bottom-two2 {{ bottom_two }}" src="/images/11.png"></image>
+		<image class="bottom-three {{ bottom_three }}" src="/images/12.png"></image>
+		<image class="bottom-three2 {{ bottom_three }}" src="/images/12.png"></image>		
+		<image class="bottom-four {{ bottom_four }}" src="/images/10.png"></image>
+		<image class="bottom-four2 {{ bottom_four }}" src="/images/10.png"></image>
+	</view>
+</view>

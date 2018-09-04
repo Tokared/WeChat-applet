@@ -1,0 +1,55 @@
+<!--index.wxml-->
+<view>
+	<view class='total'bindtouchstart="containerTap"> <!--新版本里面如果页面右scroll-view组件会与下拉刷新冲突-->
+		<view class='nav'></view>
+		<image class='pro-personlogo'mode="widthFix"src="/images/dline.jpg"style='width: 100%;'></image>
+		<view class='box-swiper {{box_swiper}}'>
+			<view class='title'>那一年，我们毕业了</view>
+			<view class="swiper">
+				<swiper
+					indicator-dots="{{indicatorDots}}" indicator-active-color="{{indicatorActiveColor}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
+					interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
+					<block wx:for="{{imgUrls}}" wx:key="*this">
+						<swiper-item>
+							<image src="{{item}}" class="slide-image" mode="widthFix" style='width: 100%;'/>
+						</swiper-item>
+					</block>
+				</swiper>
+			</view>
+			<view class='swiper-word'>人生本来就有很多事是徒劳无功的，但是我们还是依然要经历。</view>
+		</view>
+		<image class='pro-personlogo'mode="widthFix"src="/images/dline.jpg" style='width: 100%;'></image>
+		<view class="container {{container}}">
+			<view class='item-one' style="order:2">moudle 1</view>
+			<view class='item-two {{item_two}}' style="order:3" bindtap='flipTx'>
+				<image class='pro-personlogo {{item_imgTx}}'mode="widthFix"src="/images/Alade.jpg" style='width: 100%;;'></image>
+			</view>
+			<view class='item-three'style="order:4">moudle 3</view>
+			<view class='item-four' style="order:6">moudle 4</view>
+			<view class='item-five {{item_five}}'  bindtap='flipKk' style="order:7">
+				<image class='pro-personlogo {{item_imgKk}}'mode="widthFix"src="/images/Alade.jpg" style='width: 100%;'></image>
+			</view>
+			<view class='item-six'style="order:8">moudle 6</view>
+			<view class='item-seven'style="order:10">moudle 7</view>
+			<view class='item-eight {{item_eight}}'  bindtap='flipCy' style="order:11">
+				<image class='pro-personlogo {{item_imgCy}}'mode="widthFix"src="/images/Alade.jpg" style='width: 100%;'></image>
+			</view>
+			<view class='item-nine'style="order:12">moudle 9</view>
+			<view class='item-ten'style="order:1">
+				<text>拓卡</text>
+				<text class='item-text1 {{item_text1}}'></text>
+			</view>
+			<view class='item-eleven'style="order:5">
+				<text>大魔王</text>
+				<text class='item-text2 {{item_text2}}'></text>
+			</view>
+			<view class='item-twelve'style="order:9">
+				<text>小公举</text>
+				<text class='item-text3 {{item_text3}}'></text>
+			</view>
+		</view>
+		<image class='pro-personlogo'mode="widthFix"src="/images/dline.jpg"style='width: 100%;'></image>
+		<view class='footer'></view>
+	</view>
+	<view class="ripple" style="{{rippleStyle}}"></view>
+</view>
